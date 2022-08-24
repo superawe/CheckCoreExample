@@ -41,7 +41,7 @@ namespace CoreExample1.Controllers
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateTime.Now.AddDays(index),
-                TemperatureC = Random.Shared.Next(-20, 55),
+                TemperatureC = Random.Shared.Next(-30, 55),
                 Summary = Summaries[Random.Shared.Next(Summaries.Length)],
                 IsFakeNews = true
             })
